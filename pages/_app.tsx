@@ -1,8 +1,4 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { TrackerApp } from '../src/TrackerApp/TrackerApp';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
-
-export default MyApp
+// eslint-disable-next-line import/no-default-export
+export default TrackerApp;

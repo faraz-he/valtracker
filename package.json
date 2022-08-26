@@ -3,21 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev -p 4000",
+    "build": "rm -rf .next && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-better-styled-components": "^1.1.2",
+    "eslint-plugin-no-unsanitized": "^4.0.1",
+    "eslint-plugin-prefer-arrow-functions": "^3.1.4",
+    "eslint-plugin-prettier": "^4.2.1",
     "next": "12.2.5",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5",
+    "typescript-eslint": "^0.0.1-alpha.0"
   },
   "devDependencies": {
     "@types/node": "18.7.13",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.22.0",
+    "@types/styled-components": "^5.1.26",
+    "eslint": "^8.22.0",
     "eslint-config-next": "12.2.5",
     "typescript": "4.8.2"
   }
